@@ -1,0 +1,43 @@
+﻿<Window x:Class="Seleznev2702Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Seleznev2702Test"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Регистрация" Height="700" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center">
+            <Label FontSize="28" >Регистрация профиля</Label>
+            <Label>Имя:</Label>
+            <TextBox Name="NameTB" ToolTip="Имя" Width="200"></TextBox>
+            <Label>Фамилия:</Label>
+            <TextBox Name="SurnameNameTB" ToolTip="Фамилия" Width="200"></TextBox>
+            <Label>Отчество:</Label>
+            <TextBox Name="PatronymicTB" ToolTip="Отчество" Width="200"></TextBox>
+            <Label>Возраст:</Label>
+            <TextBox Name="AgeTB" ToolTip="Возраст" Width="200"></TextBox>
+            <Label>Логин:</Label>
+            <TextBox Name="LoginTB" ToolTip="Логин" Width="200"></TextBox>
+            <Label>Пароль:</Label>
+            <PasswordBox Name="PasswordPB" ToolTip="Пароль" Width="200"></PasswordBox>
+            <Label>Подтвердите пароль:</Label>
+            <PasswordBox Name="PasswordPB2" ToolTip="Подтвердите пароль" Width="200"></PasswordBox>
+            <Label>Почта:</Label>
+            <TextBox Name="EmailTB" ToolTip="Эл. почта" Width="200"></TextBox>
+            <StackPanel HorizontalAlignment="Left">
+                <Label>Пол:</Label>
+                    <ComboBox Name="GenderCB">
+                    <ComboBoxItem>М</ComboBoxItem>
+                    <ComboBoxItem>Ж</ComboBoxItem>
+                </ComboBox>
+                <Label>Должность</Label>
+                <ComboBox Name="PositionCB"></ComboBox>
+                <Label>Роль:</Label>
+                <ComboBox Name="RoleCB"></ComboBox>
+            </StackPanel>
+            <Button Name="RegBtn" Width="200" Height="25" Click="RegBtn_Click" Margin="10">Зарегестрироваться</Button>
+        </StackPanel>
+    </Grid>
+</Window>
