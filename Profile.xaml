@@ -5,8 +5,62 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Seleznev2702Test"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="Profile" Height="450" Width="800">
+
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Column="0"
+               Width="200"
+               Height="200"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="11,10,0,0"/>
+
+        <Grid Grid.Column="1" Margin="0,20,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Column="0" Margin="0,0,30,0">
+                <Label Margin="0,5">Фамилия</Label>
+                <TextBlock Name="SurnameTBL" Margin="0,0,0,10"/>
+
+                <Label Margin="0,5">Имя</Label>
+                <TextBlock Name="NameTBL" Margin="0,0,0,10"/>
+
+                <Label Margin="0,5">Отчество</Label>
+                <TextBlock Name="PatronymicTBL" Margin="0,0,0,10"/>
+
+                <Label Margin="0,5">Пол</Label>
+                <TextBlock Name="GenderTBL" Margin="0,0,0,10"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1">
+                <Label Margin="0,5">Возраст</Label>
+                <TextBlock Name="AgeTBL" Margin="0,0,0,10"/>
+
+                <Label Margin="0,5">Email</Label>
+                <TextBlock Name="EmailTBL" Margin="0,0,0,10"/>
+
+                <Label Margin="0,5">Роль</Label>
+                <TextBlock Name="RoleTBL" Margin="0,0,0,10"/>
+
+                <Label Margin="0,5">Должность</Label>
+                <TextBlock Name="PositionTBL" Margin="0,0,0,10"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

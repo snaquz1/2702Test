@@ -8,33 +8,39 @@ using System.Threading.Tasks;
 
 namespace Seleznev2702Test
 {
-    internal class User
+    public class User
     {
         [Index]
         public int Id { get; set; }
 
         [Column(TypeName = "varchar")]
         [MaxLength(50)]
+        [Required]
         public string Name { get; set; }
         [Column(TypeName = "varchar")]
         [MaxLength(50)]
+        [Required]
         public string Surname { get; set; }
 
         [Column(TypeName = "varchar")]
         [MaxLength(50)]
+        [Required]
         public string Patronymic { get; set; }
         public int Age { get; set; }
 
         [Column(TypeName = "varchar")]
         [MaxLength(50)]
+        [Required]
         public string Login { get; set; }
 
         [Column(TypeName = "varchar")]
         [MaxLength(50)]
+        [Required]
         public string Password { get; set; }
 
         [Column(TypeName = "varchar")]
         [MaxLength(50)]
+        [Required]
         public string Email { get; set; }
         public string Gender { get; set; }
         [ForeignKey("Position")]

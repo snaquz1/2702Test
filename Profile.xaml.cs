@@ -19,9 +19,20 @@ namespace Seleznev2702Test
     /// </summary>
     public partial class Profile : Window
     {
-        public Profile()
+        public Profile(User user)
         {
             InitializeComponent();
+            if (user != null)
+            {
+                SurnameTBL.Text = user.Surname;
+                NameTBL.Text = user.Name;
+                PatronymicTBL.Text = user.Patronymic;
+                GenderTBL.Text = user.Gender.ToString();
+                AgeTBL.Text = user.Age.ToString();
+                EmailTBL.Text = user.Email;
+                RoleTBL.Text = user.RoleName.ToString();
+                PositionTBL.Text = user.PositionName.ToString();
+            }
         }
     }
 }

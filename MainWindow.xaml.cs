@@ -1,6 +1,6 @@
-﻿using Seleznev2502;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Validation;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Seleznev2502;
 
 namespace Seleznev2702Test
 {
@@ -41,9 +42,10 @@ namespace Seleznev2702Test
             //    position.NamePosition = "Стажер";
             //    position.Description = "Проходит стажировку за бесплатно";
 
-                
+
             //    context.Roles.Add(role1);
-                
+            //    context.Positions.Add(position);
+
 
             //    context.SaveChanges();
             //}
@@ -76,6 +78,11 @@ namespace Seleznev2702Test
                     user.Name = NameTB.Text;
                     user.Surname = SurnameNameTB.Text;
                     user.Patronymic = PatronymicTB.Text;
+                    if (age <= 0 | age > 120)
+                    {
+                        MessageBox.Show("Ошибка возраста", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
                     user.Age = age;
                     user.Login = LoginTB.Text;
                     if (PasswordPB.Password == PasswordPB2.Password)
@@ -88,20 +95,53 @@ namespace Seleznev2702Test
                         return;
                     }
                     user.Email = EmailTB.Text;
-                    user.Gender = GenderCB.SelectedItem.ToString();
-                    user.RoleName = RoleCB.SelectedItem.ToString();
-                    user.PositionName = PositionCB.SelectedItem.ToString();
+                    if (GenderCB.SelectedItem != null)
+                    {
+                        user.Gender = GenderCB.SelectedValue.ToString();
+                    }
+                    if (RoleCB.SelectedItem != null)
+                    {
+                        user.RoleName = RoleCB.SelectedValue.ToString();
+                    }
+                    if (PositionCB.SelectedItem != null)
+                    {
+                        user.PositionName = PositionCB.SelectedValue.ToString();
+                    }
+                    
                     context.Users.Add(user);
                     context.SaveChanges();
                     MessageBox.Show("Пользователь успешно зарегестрирован", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                    Profile profile = new Profile(user);
+                    profile.Show();
+                    this.Close();
                     
 
-                }catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
                 }
-                
+                catch (DbEntityValidationException ex)
+                {
+                    var sb = new StringBuilder();
+
+                    foreach (var eve in ex.EntityValidationErrors)
+                    {
+                        sb.AppendLine($"Entity: {eve.Entry.Entity.GetType().Name}, State: {eve.Entry.State}");
+
+                        foreach (var ve in eve.ValidationErrors)
+                        {
+                            sb.AppendLine($"  - {ve.PropertyName}: {ve.ErrorMessage}");
+                        }
+                    }
+
+                    MessageBox.Show(sb.ToString(), "Validation errors");
+                }
+
             }
+        }
+
+        private void AuthBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Auth auth = new Auth();
+            auth.Show();
+            this.Close();
         }
     }
 }

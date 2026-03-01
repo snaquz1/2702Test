@@ -7,37 +7,75 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="Регистрация" Height="700" Width="800">
-    <Grid>
-        <StackPanel HorizontalAlignment="Center">
-            <Label FontSize="28" >Регистрация профиля</Label>
-            <Label>Имя:</Label>
-            <TextBox Name="NameTB" ToolTip="Имя" Width="200"></TextBox>
-            <Label>Фамилия:</Label>
-            <TextBox Name="SurnameNameTB" ToolTip="Фамилия" Width="200"></TextBox>
-            <Label>Отчество:</Label>
-            <TextBox Name="PatronymicTB" ToolTip="Отчество" Width="200"></TextBox>
-            <Label>Возраст:</Label>
-            <TextBox Name="AgeTB" ToolTip="Возраст" Width="200"></TextBox>
-            <Label>Логин:</Label>
-            <TextBox Name="LoginTB" ToolTip="Логин" Width="200"></TextBox>
-            <Label>Пароль:</Label>
-            <PasswordBox Name="PasswordPB" ToolTip="Пароль" Width="200"></PasswordBox>
-            <Label>Подтвердите пароль:</Label>
-            <PasswordBox Name="PasswordPB2" ToolTip="Подтвердите пароль" Width="200"></PasswordBox>
-            <Label>Почта:</Label>
-            <TextBox Name="EmailTB" ToolTip="Эл. почта" Width="200"></TextBox>
-            <StackPanel HorizontalAlignment="Left">
-                <Label>Пол:</Label>
-                    <ComboBox Name="GenderCB">
-                    <ComboBoxItem>М</ComboBoxItem>
-                    <ComboBoxItem>Ж</ComboBoxItem>
-                </ComboBox>
-                <Label>Должность</Label>
-                <ComboBox Name="PositionCB"></ComboBox>
-                <Label>Роль:</Label>
-                <ComboBox Name="RoleCB"></ComboBox>
-            </StackPanel>
-            <Button Name="RegBtn" Width="200" Height="25" Click="RegBtn_Click" Margin="10">Зарегестрироваться</Button>
-        </StackPanel>
+    <Grid HorizontalAlignment="Center" Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="220"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0"
+           Grid.ColumnSpan="2"
+           FontSize="28"
+           HorizontalAlignment="Center"
+           Margin="0,0,0,20">
+            Регистрация профиля
+        </Label>
+
+        <Label Grid.Row="1" Grid.Column="0" Margin="0,5">Имя:</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="NameTB" Width="200" Margin="0,5"/>
+
+        <Label Grid.Row="2" Grid.Column="0" Margin="0,5">Фамилия:</Label>
+        <TextBox Grid.Row="2" Grid.Column="1" Name="SurnameNameTB" Width="200" Margin="0,5"/>
+
+        <Label Grid.Row="3" Grid.Column="0" Margin="0,5">Отчество:</Label>
+        <TextBox Grid.Row="3" Grid.Column="1" Name="PatronymicTB" Width="200" Margin="0,5"/>
+
+        <Label Grid.Row="4" Grid.Column="0" Margin="0,5">Возраст:</Label>
+        <TextBox Grid.Row="4" Grid.Column="1" Name="AgeTB" Width="200" Margin="0,5"/>
+
+        <Label Grid.Row="5" Grid.Column="0" Margin="0,5">Логин:</Label>
+        <TextBox Grid.Row="5" Grid.Column="1" Name="LoginTB" Width="200" Margin="0,5"/>
+
+        <Label Grid.Row="6" Grid.Column="0" Margin="0,5">Пароль:</Label>
+        <PasswordBox Grid.Row="6" Grid.Column="1" Name="PasswordPB" Width="200" Margin="0,5"/>
+
+        <Label Grid.Row="7" Grid.Column="0" Margin="0,5">Подтвердите пароль:</Label>
+        <PasswordBox Grid.Row="7" Grid.Column="1" Name="PasswordPB2" Width="200" Margin="0,5"/>
+
+        <Label Grid.Row="8" Grid.Column="0" Margin="0,5">Почта:</Label>
+        <TextBox Grid.Row="8" Grid.Column="1" Name="EmailTB" Width="200" Margin="0,5"/>
+
+        <Label Grid.Row="9" Grid.Column="0" Margin="0,5">Пол:</Label>
+        <ComboBox Grid.Row="9" Grid.Column="1" Name="GenderCB" Width="200" Margin="0,5" SelectedValuePath="Content">
+            <ComboBoxItem Content="М"></ComboBoxItem>
+            <ComboBoxItem Content="Ж"></ComboBoxItem>
+        </ComboBox>
+
+        <Label Grid.Row="10" Grid.Column="0" Margin="0,5">Должность:</Label>
+        <ComboBox Grid.Row="10" Grid.Column="1" Name="PositionCB" Width="200" Margin="0,5"/>
+
+        <Label Grid.Row="11" Grid.Column="0" Margin="0,5">Роль:</Label>
+        <ComboBox Grid.Row="11" Grid.Column="1" Name="RoleCB" Width="200" Margin="0,5"/>
+
+        <Button Grid.Row="12" Grid.ColumnSpan="2" Name="RegBtn" Width="200" Height="30" Margin="0,20,0,0" HorizontalAlignment="Center" Click="RegBtn_Click">Зарегистрироваться</Button>
+        <Button Grid.Row="13" Grid.ColumnSpan="2" Name="AuthBtn" Width="100" Height="30" Margin="0,20,0,0" HorizontalAlignment="Center" Click="AuthBtn_Click">Авторизация</Button>
+        
     </Grid>
 </Window>

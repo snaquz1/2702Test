@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Seleznev2702Test
 {
-    internal class Position
+    public class Position
     {
         [Index] 
         public int Id {  get; set; }

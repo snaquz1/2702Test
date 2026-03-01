@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Seleznev2702Test
 {
-    internal class Role
+    public class Role
     {
         [Index]
         public int Id { get; set; }
