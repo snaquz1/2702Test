@@ -44,6 +44,7 @@ namespace Seleznev2702Test
 
 
             //    context.Roles.Add(role1);
+            //    context.Roles.Add(role);
             //    context.Positions.Add(position);
 
 
@@ -117,21 +118,9 @@ namespace Seleznev2702Test
                     
 
                 }
-                catch (DbEntityValidationException ex)
+                catch (Exception ex)
                 {
-                    var sb = new StringBuilder();
-
-                    foreach (var eve in ex.EntityValidationErrors)
-                    {
-                        sb.AppendLine($"Entity: {eve.Entry.Entity.GetType().Name}, State: {eve.Entry.State}");
-
-                        foreach (var ve in eve.ValidationErrors)
-                        {
-                            sb.AppendLine($"  - {ve.PropertyName}: {ve.ErrorMessage}");
-                        }
-                    }
-
-                    MessageBox.Show(sb.ToString(), "Validation errors");
+                    MessageBox.Show(ex.Message);
                 }
 
             }

@@ -33,10 +33,11 @@
         <Label Grid.Row="0"
            Grid.ColumnSpan="2"
            FontSize="28"
-           HorizontalAlignment="Center"
-           Margin="0,0,0,20">
+           HorizontalAlignment="Left"
+           Margin="40,-10,0,30">
             Регистрация профиля
         </Label>
+        <Button Width="150" Height="20" Margin="0,37,0,10">Загрузить аватарку</Button>
 
         <Label Grid.Row="1" Grid.Column="0" Margin="0,5">Имя:</Label>
         <TextBox Grid.Row="1" Grid.Column="1" Name="NameTB" Width="200" Margin="0,5"/>
@@ -76,6 +77,6 @@
 
         <Button Grid.Row="12" Grid.ColumnSpan="2" Name="RegBtn" Width="200" Height="30" Margin="0,20,0,0" HorizontalAlignment="Center" Click="RegBtn_Click">Зарегистрироваться</Button>
         <Button Grid.Row="13" Grid.ColumnSpan="2" Name="AuthBtn" Width="100" Height="30" Margin="0,20,0,0" HorizontalAlignment="Center" Click="AuthBtn_Click">Авторизация</Button>
-        
+
     </Grid>
 </Window>

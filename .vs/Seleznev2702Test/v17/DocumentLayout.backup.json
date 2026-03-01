@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F494A36-8BDA-4379-B4E2-A7B77A845C7D}|Seleznev2702Test.csproj|c:\\users\\777\\source\\repos\\practice02-hz\\2702\\2702test\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2F494A36-8BDA-4379-B4E2-A7B77A845C7D}|Seleznev2702Test.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{2F494A36-8BDA-4379-B4E2-A7B77A845C7D}|Seleznev2702Test.csproj|c:\\users\\777\\source\\repos\\practice02-hz\\2702\\2702test\\profile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F494A36-8BDA-4379-B4E2-A7B77A845C7D}|Seleznev2702Test.csproj|solutionrelative:profile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F494A36-8BDA-4379-B4E2-A7B77A845C7D}|Seleznev2702Test.csproj|c:\\users\\777\\source\\repos\\practice02-hz\\2702\\2702test\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F494A36-8BDA-4379-B4E2-A7B77A845C7D}|Seleznev2702Test.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F494A36-8BDA-4379-B4E2-A7B77A845C7D}|Seleznev2702Test.csproj|c:\\users\\777\\source\\repos\\practice02-hz\\2702\\2702test\\profile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F494A36-8BDA-4379-B4E2-A7B77A845C7D}|Seleznev2702Test.csproj|solutionrelative:profile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2F494A36-8BDA-4379-B4E2-A7B77A845C7D}|Seleznev2702Test.csproj|c:\\users\\777\\source\\repos\\practice02-hz\\2702\\2702test\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F494A36-8BDA-4379-B4E2-A7B77A845C7D}|Seleznev2702Test.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F494A36-8BDA-4379-B4E2-A7B77A845C7D}|Seleznev2702Test.csproj|c:\\users\\777\\source\\repos\\practice02-hz\\2702\\2702test\\auth.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F494A36-8BDA-4379-B4E2-A7B77A845C7D}|Seleznev2702Test.csproj|solutionrelative:auth.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2F494A36-8BDA-4379-B4E2-A7B77A845C7D}|Seleznev2702Test.csproj|c:\\users\\777\\source\\repos\\practice02-hz\\2702\\2702test\\auth.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2F494A36-8BDA-4379-B4E2-A7B77A845C7D}|Seleznev2702Test.csproj|solutionrelative:auth.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F494A36-8BDA-4379-B4E2-A7B77A845C7D}|Seleznev2702Test.csproj|c:\\users\\777\\source\\repos\\practice02-hz\\2702\\2702test\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2F494A36-8BDA-4379-B4E2-A7B77A845C7D}|Seleznev2702Test.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F494A36-8BDA-4379-B4E2-A7B77A845C7D}|Seleznev2702Test.csproj|c:\\users\\777\\source\\repos\\practice02-hz\\2702\\2702test\\profile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -30,8 +34,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Profile.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\Profile.xaml.cs",
+              "RelativeDocumentMoniker": "Profile.xaml.cs",
+              "ToolTip": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\Profile.xaml.cs",
+              "RelativeToolTip": "Profile.xaml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAxwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T21:47:58.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\User.cs",
+              "RelativeDocumentMoniker": "User.cs",
+              "ToolTip": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\User.cs",
+              "RelativeToolTip": "User.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T21:35:33.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-01T19:51:18.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Auth.xaml",
+              "DocumentMoniker": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\Auth.xaml",
+              "RelativeDocumentMoniker": "Auth.xaml",
+              "ToolTip": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\Auth.xaml",
+              "RelativeToolTip": "Auth.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-01T19:51:13.421Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -40,59 +94,21 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAQwGsAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwDgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T17:47:18.829Z",
+              "WhenOpened": "2026-03-01T19:11:57.085Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-01T17:47:16.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Profile.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\Profile.xaml.cs",
-              "RelativeDocumentMoniker": "Profile.xaml.cs",
-              "ToolTip": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\Profile.xaml.cs",
-              "RelativeToolTip": "Profile.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T17:47:07.013Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Auth.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\Auth.xaml.cs",
-              "RelativeDocumentMoniker": "Auth.xaml.cs",
-              "ToolTip": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\Auth.xaml.cs",
-              "RelativeToolTip": "Auth.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAmwDIAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T15:18:12.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Profile.xaml",
               "DocumentMoniker": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\Profile.xaml",
               "RelativeDocumentMoniker": "Profile.xaml",
               "ToolTip": "C:\\Users\\777\\source\\repos\\practice02-hz\\2702\\2702Test\\Profile.xaml",
               "RelativeToolTip": "Profile.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-01T15:15:53.011Z",
+              "WhenOpened": "2026-03-01T18:00:01.753Z",
               "EditorCaption": ""
             }
           ]

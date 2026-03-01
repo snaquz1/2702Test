@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -12,6 +13,11 @@ namespace Seleznev2702Test
     {
         [Index]
         public int Id { get; set; }
+
+        [Column(TypeName = "varchar")]
+        [DefaultValue("None")]
+        [MaxLength(50)]
+        public string AvatarPath { get; set; }
 
         [Column(TypeName = "varchar")]
         [MaxLength(50)]

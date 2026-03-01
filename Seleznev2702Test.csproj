@@ -68,6 +68,19 @@
     <Compile Include="Auth.xaml.cs">
       <DependentUpon>Auth.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202603011912415_InitialCreate.cs" />
+    <Compile Include="Migrations\202603011912415_InitialCreate.Designer.cs">
+      <DependentUpon>202603011912415_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202603012138549_AddedAvatarField.cs" />
+    <Compile Include="Migrations\202603012138549_AddedAvatarField.Designer.cs">
+      <DependentUpon>202603012138549_AddedAvatarField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202603012222517_DefinedDefaultValueForAvatarField.cs" />
+    <Compile Include="Migrations\202603012222517_DefinedDefaultValueForAvatarField.Designer.cs">
+      <DependentUpon>202603012222517_DefinedDefaultValueForAvatarField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Position.cs" />
     <Compile Include="Profile.xaml.cs">
       <DependentUpon>Profile.xaml</DependentUpon>
@@ -110,6 +123,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\202603011912415_InitialCreate.resx">
+      <DependentUpon>202603011912415_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202603012138549_AddedAvatarField.resx">
+      <DependentUpon>202603012138549_AddedAvatarField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202603012222517_DefinedDefaultValueForAvatarField.resx">
+      <DependentUpon>202603012222517_DefinedDefaultValueForAvatarField.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

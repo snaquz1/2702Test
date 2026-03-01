@@ -11,6 +11,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Microsoft.Win32;
+using Seleznev2502;
+using System.IO;
+
 
 namespace Seleznev2702Test
 {
@@ -19,11 +23,24 @@ namespace Seleznev2702Test
     /// </summary>
     public partial class Profile : Window
     {
+        private User CurrentUser;
         public Profile(User user)
         {
             InitializeComponent();
+            CurrentUser = user;
             if (user != null)
             {
+                try
+                {
+                    var fullPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, user.AvatarPath);
+                    Avatar.Source = new BitmapImage(new Uri(fullPath));
+                }
+                catch (Exception ex) { 
+                    Console.WriteLine(ex.Message);
+                    Avatar.Source = new BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + "user_avatars/default.jpg"));
+                }
+                
+                
                 SurnameTBL.Text = user.Surname;
                 NameTBL.Text = user.Name;
                 PatronymicTBL.Text = user.Patronymic;
@@ -32,6 +49,36 @@ namespace Seleznev2702Test
                 EmailTBL.Text = user.Email;
                 RoleTBL.Text = user.RoleName.ToString();
                 PositionTBL.Text = user.PositionName.ToString();
+            }
+        }
+
+        private void ChangeAvatarBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var dlg = new OpenFileDialog
+            {
+                Title="Выберите аватарку",
+            };
+            if (dlg.ShowDialog() != true)
+            {
+                return;
+            }
+            using (Context context = new Context())
+            {
+                var user = context.Users.First(u => u.Id == CurrentUser.Id);
+                var appdir = AppDomain.CurrentDomain.BaseDirectory;
+                var avatardir = System.IO.Path.Combine(appdir, "user_avatars");
+                Directory.CreateDirectory(avatardir);
+
+                var extension = System.IO.Path.GetExtension(dlg.FileName);
+                var filename = $"user{CurrentUser.Id}avatar{extension}";
+
+                var destFullPath = System.IO.Path.Combine(avatardir, filename);
+
+                File.Copy(dlg.FileName, destFullPath, true);
+
+                user.AvatarPath = System.IO.Path.Combine("user_avatars", filename);
+                context.SaveChanges();
+                Avatar.Source = Avatar.Source = new BitmapImage(new Uri(destFullPath));
             }
         }
     }
