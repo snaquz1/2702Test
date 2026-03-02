@@ -27,43 +27,50 @@ namespace Seleznev2702Test
             InitializeComponent();
 
 
-
-            //using (Context context = new Context())
-            //{
-            //    Role role = new Role();
-            //    role.NameRole = "Admin";
-            //    role.Description = "Администратор приложения";
-
-            //    Role role1 = new Role();
-            //    role1.NameRole = "User";
-
-
-            //    Position position = new Position();
-            //    position.NamePosition = "Стажер";
-            //    position.Description = "Проходит стажировку за бесплатно";
-
-
-            //    context.Roles.Add(role1);
-            //    context.Roles.Add(role);
-            //    context.Positions.Add(position);
-
-
-            //    context.SaveChanges();
-            //}
-
-            using (Context context = new Context())
+            try
             {
-                
-                var roles = context.Roles.ToList();
-                for (int i = 0; i < roles.Count; i++)
+
+
+                using (Context context = new Context())
                 {
-                    RoleCB.Items.Add(roles[i].NameRole);
+                    Role role = new Role();
+                    role.NameRole = "Admin";
+                    role.Description = "Администратор приложения";
+
+                    Role role1 = new Role();
+                    role1.NameRole = "User";
+
+
+                    Position position = new Position();
+                    position.NamePosition = "Стажер";
+                    position.Description = "Проходит стажировку за бесплатно";
+
+
+                    context.Roles.Add(role1);
+                    context.Roles.Add(role);
+                    context.Positions.Add(position);
+
+
+                    context.SaveChanges();
                 }
-                var positions = context.Positions.ToList();
-                for (int i = 0; i < positions.Count; i++)
+
+                using (Context context = new Context())
                 {
-                    PositionCB.Items.Add(positions[i].NamePosition);
+
+                    var roles = context.Roles.ToList();
+                    for (int i = 0; i < roles.Count; i++)
+                    {
+                        RoleCB.Items.Add(roles[i].NameRole);
+                    }
+                    var positions = context.Positions.ToList();
+                    for (int i = 0; i < positions.Count; i++)
+                    {
+                        PositionCB.Items.Add(positions[i].NamePosition);
+                    }
                 }
+            }
+            catch (Exception ex) { 
+                Console.WriteLine(ex.ToString());
             }
         }
 
