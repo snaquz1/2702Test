@@ -28,11 +28,9 @@ C:\Users\777\source\repos\practice02-hz\2702\2702Test\bin\Debug\EntityFramework.
 C:\Users\777\source\repos\practice02-hz\2702\2702Test\bin\Debug\EntityFramework.xml
 C:\Users\777\source\repos\practice02-hz\2702\2702Test\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Seleznev2702Test.csproj.AssemblyReference.cache
-C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\MainWindow.g.cs
 C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\App.g.cs
 C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Seleznev2702Test_MarkupCompile.cache
 C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Seleznev2702Test_MarkupCompile.lref
-C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\MainWindow.baml
 C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Seleznev2702Test.g.resources
 C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Seleznev2702Test.Properties.Resources.resources
 C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Seleznev2702Test.csproj.GenerateResource.cache
@@ -40,9 +38,11 @@ C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Seleznev2702Test
 C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Seleznev.D3C79568.Up2Date
 C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Profile.g.cs
 C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Profile.baml
-C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Seleznev2702Test.exe.config
 C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Auth.g.cs
 C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Auth.baml
 C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Seleznev2702Test.Migrations.InitialCreate.resources
 C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Seleznev2702Test.Migrations.AddedAvatarField.resources
 C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Seleznev2702Test.Migrations.DefinedDefaultValueForAvatarField.resources
+C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Registration.g.cs
+C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Registration.baml
+C:\Users\777\source\repos\practice02-hz\2702\2702Test\obj\Debug\Seleznev2702Test.exe.config

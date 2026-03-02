@@ -50,6 +50,18 @@ namespace Seleznev2702Test
                 RoleTBL.Text = user.RoleName.ToString();
                 PositionTBL.Text = user.PositionName.ToString();
             }
+            try
+            {
+                using (Context context = new Context())
+                {
+                    AllUsersDG.ItemsSource = context.Users.ToList();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         private void ChangeAvatarBtn_Click(object sender, RoutedEventArgs e)
@@ -60,6 +72,15 @@ namespace Seleznev2702Test
             };
             if (dlg.ShowDialog() != true)
             {
+                return;
+            }
+            var ext = System.IO.Path.GetExtension(dlg.FileName).ToLowerInvariant();
+            var allowed = new HashSet<string> { ".jpg", ".jpeg", ".png", ".bmp", ".gif", ".webp" };
+
+            if (!allowed.Contains(ext))
+            {
+                MessageBox.Show("Можно загрузить только изображение (jpg/png/bmp/gif/webp).",
+                    "Не картинка", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
             using (Context context = new Context())
@@ -81,5 +102,14 @@ namespace Seleznev2702Test
                 Avatar.Source = Avatar.Source = new BitmapImage(new Uri(destFullPath));
             }
         }
+
+        private void LogoutBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Registration registration = new Registration();
+            registration.Show();
+            this.Close();
+        }
+
+        
     }
 }

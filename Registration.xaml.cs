@@ -18,59 +18,61 @@ using Seleznev2502;
 namespace Seleznev2702Test
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Registration.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Registration : Window
     {
-        public MainWindow()
+        public Registration()
         {
             InitializeComponent();
 
 
             try
             {
-
-
-                using (Context context = new Context())
-                {
-                    Role role = new Role();
-                    role.NameRole = "Admin";
-                    role.Description = "Администратор приложения";
-
-                    Role role1 = new Role();
-                    role1.NameRole = "User";
-
-
-                    Position position = new Position();
-                    position.NamePosition = "Стажер";
-                    position.Description = "Проходит стажировку за бесплатно";
-
-
-                    context.Roles.Add(role1);
-                    context.Roles.Add(role);
-                    context.Positions.Add(position);
-
-
-                    context.SaveChanges();
-                }
-
                 using (Context context = new Context())
                 {
 
-                    var roles = context.Roles.ToList();
+                    var roles = new List<Role>
+                    {
+                        new Role{NameRole="Admin", Description="Администратор"},
+                        new Role{NameRole="User", Description="Обычный пользователь"},
+                        new Role{NameRole="Moderator", Description="Модер"}
+                    };
+                    var positions = new List<Position>
+                    {
+                        new Position{NamePosition="Стажер", Description="Проходит стажировку в компании"},
+                        new Position{NamePosition="Сотрудник", Description="Полноценный сотрудник опыт больше полугода"},
+                        new Position{NamePosition="Директор", Description="Директор отдела"}
+                    };
                     for (int i = 0; i < roles.Count; i++)
                     {
-                        RoleCB.Items.Add(roles[i].NameRole);
+                        context.Roles.Add(roles[i]);
                     }
-                    var positions = context.Positions.ToList();
                     for (int i = 0; i < positions.Count; i++)
                     {
-                        PositionCB.Items.Add(positions[i].NamePosition);
+                        context.Positions.Add(positions[i]);
                     }
+                    context.SaveChanges();
                 }
             }
-            catch (Exception ex) { 
+            catch (Exception ex)
+            {
                 Console.WriteLine(ex.ToString());
+            }
+
+            using (Context context = new Context())
+            {
+
+                var roles = context.Roles.ToList();
+                for (int i = 0; i < roles.Count; i++)
+                {
+                    RoleCB.Items.Add(roles[i].NameRole);
+                }
+                var positions = context.Positions.ToList();
+                for (int i = 0; i < positions.Count; i++)
+                {
+                    PositionCB.Items.Add(positions[i].NamePosition);
+                }
             }
         }
 
@@ -115,14 +117,14 @@ namespace Seleznev2702Test
                     {
                         user.PositionName = PositionCB.SelectedValue.ToString();
                     }
-                    
+
                     context.Users.Add(user);
                     context.SaveChanges();
                     MessageBox.Show("Пользователь успешно зарегестрирован", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
                     Profile profile = new Profile(user);
                     profile.Show();
                     this.Close();
-                    
+
 
                 }
                 catch (Exception ex)

@@ -1,4 +1,4 @@
-﻿<Window x:Class="Seleznev2702Test.MainWindow"
+﻿<Window x:Class="Seleznev2702Test.Registration"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -37,7 +37,6 @@
            Margin="40,-10,0,30">
             Регистрация профиля
         </Label>
-        <Button Width="150" Height="20" Margin="0,37,0,10">Загрузить аватарку</Button>
 
         <Label Grid.Row="1" Grid.Column="0" Margin="0,5">Имя:</Label>
         <TextBox Grid.Row="1" Grid.Column="1" Name="NameTB" Width="200" Margin="0,5"/>

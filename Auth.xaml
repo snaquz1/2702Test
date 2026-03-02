@@ -23,6 +23,7 @@
         <TextBox Name="LoginTB" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"></TextBox>
         <Label Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,97,0,0">Пароль:</Label>
         <TextBox Name="PasswordTB" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Margin="0,101,0,0"></TextBox>
-        <Button Name="LoginBtn" FontSize="16" Width="100" Height="50" Grid.Column="1" Content="Войти" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Click="LoginBtn_Click"/>
+        <Button Name="LoginBtn" FontSize="16" Width="100" Height="50" Grid.Column="1" Content="Войти" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Top" Click="LoginBtn_Click" Margin="0,23,0,0"/>
+        <Button Name="RegBtn" FontSize="16" Width="184" Height="34" Grid.Column="1" Content="Зарегестрироваться" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Top" Margin="0,94,0,0" Click="RegBtn_Click"/>
     </Grid>
 </Window>

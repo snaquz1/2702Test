@@ -53,5 +53,12 @@ namespace Seleznev2702Test
                 
             }
         }
+
+        private void RegBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Registration registartion = new Registration();
+            registartion.Show();
+            this.Close();
+        }
     }
 }
